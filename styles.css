@@ -1,0 +1,447 @@
+/******************** GLOBAL STYLE ******************/
+
+body {
+    margin: 0;
+    color: black;
+    width: 100%;
+    background-image: url("images/bck.jpg");
+    font-family: 'Lato', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: default;
+    font-size: 1.15rem;
+    text-align: justify;
+
+}
+
+:root {
+    --paleblue: #537FE7;
+    --white: #ffffff;
+    --light_gray: #EEEEEE;
+    --lightblue: #D5DEF8
+}
+
+.container-fluid {
+    padding: 4% 6%;
+}
+
+
+/*********************** SIDEBAR (LEFT PART) ********************/
+
+
+.sidebar {
+    background-color: var(--white);
+    display: inline-block;
+    border-radius: 30px/40px;
+    padding: 3% 1.5%;
+    width: 29%;
+    height: 30%;
+    margin-right: 3.2%;
+    box-shadow: 8px 0 8px #BDCDD6;
+}
+
+.profile-pic {
+    text-align: center;
+}
+
+.hr-under-name {
+    border-top: 2px solid var(--lightblue);
+    position: relative;
+    bottom: 10px;
+}
+
+.social-icons {
+    display: inline-block;
+    border: 1px solid var(--white);
+    padding: 16px;
+    border-radius: 10%;
+    box-shadow: 0 -3px 5px #B2B2B2;
+    margin: 10px 20px;
+
+}
+
+.social-icons:hover {
+    transform: scale(1.04);
+}
+
+section {
+    line-height: 0.3;
+
+}
+
+.social-text {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.12rem;
+}
+
+.designation {
+    color: #738598;
+    text-align: center;
+    border-radius: 20px/20px;
+    padding: 7px 5px;
+}
+
+#my-name {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.surname {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.material-symbols-outlined {
+    color: var(--paleblue);
+}
+
+.download-icon {
+    color: var(--white);
+    position: relative;
+    top: 3px;
+
+
+}
+
+.award {
+    margin: 3px;
+}
+
+.award-div {
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    right: 12px;
+}
+
+.award-icon {
+    background-color: var(--white);
+    display: inline-block;
+    background-color: #EDF3FC;
+    border-radius: 50%;
+    padding: 5px 7px;
+    border: 2px solid var(--white);
+    position: relative;
+    top: 4px;
+    left: 11px
+}
+
+.award-icon:hover {
+    transform: scale(1.1);
+}
+
+.award-detail {
+    background-color: var(--paleblue);
+    padding: 6px;
+    padding-left: 10px;
+    display: inline-block;
+    color: var(--white);
+    box-shadow: 5px 5px 5px #b4c7ea;
+}
+
+.button {
+    text-align: center;
+}
+
+.bttn {
+    background-color: var(--paleblue);
+    border-radius: 28px;
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+    border-style: none;
+    margin: 20px 20px;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, var(--paleblue), #72a5f0);
+    background-image: -moz-linear-gradient(top, var(--paleblue), #72a5f0);
+    background-image: -ms-linear-gradient(top, var(--paleblue), #72a5f0);
+    background-image: -o-linear-gradient(top, var(--paleblue), #72a5f0);
+    background-image: linear-gradient(to bottom, var(--paleblue), #72a5f0);
+    padding: 3% 15%;
+
+}
+
+.bttn:hover {
+    transform: scale(1.03);
+}
+
+.bttn a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+
+}
+
+@media (max-width: 1205px) and (min-width: 1004px) {
+    .basic-info {
+        text-align: center;
+    }
+
+    .social-text {
+        display: block;
+    }
+
+    .social-text p {
+        text-align: center;
+
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .bttn {
+        padding: 2% 12%;
+    }
+}
+
+@media (min-width: 1004px) {
+    .main-resume {
+        overflow: scroll;
+        height: 1040px;
+    }
+
+}
+
+@media (max-width: 1004px) {
+
+    .sidebar {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .main-resume {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .main-resume hr {
+        width: auto;
+    }
+
+    .inst_name {
+        padding-right: 0;
+        line-height: 1.2;
+        justify-content: space-evenly;
+    }
+
+    .course_name {
+        padding-right: 0;
+        line-height: 1.2;
+        justify-content: space-evenly;
+    }
+
+    .basic-info {
+        text-align: center;
+    }
+
+    .social-text {
+        display: block;
+    }
+
+    .social-text p {
+        text-align: center;
+        font-size: 1.18rem;
+    }
+
+    .bttn {
+        padding: 1.8% 7.5%;
+    }
+
+}
+
+/********************************* MAIN RESUME (RIGHT PART) ********************/
+.about-me {
+    color: #474E68;
+}
+
+.main-resume {
+    background-color: var(--white);
+    display: inline-block;
+    border-radius: 30px/40px;
+    padding: 30px 30px;
+
+    box-shadow: 8px 0 8px #BDCDD6;
+    justify-content: space-around;
+}
+
+.main-resume hr {
+    border-style: solid;
+    border-width: 4px;
+    width: 3.5rem;
+    margin-left: 0;
+    border-radius: 8px/8px;
+    border-color: var(--paleblue);
+}
+
+.main-resume .social-icons {
+    margin: 3px 0;
+    margin-right: 10px;
+}
+
+.experience ul {
+    list-style-type: none;
+    color: #474E68;
+}
+
+.main-resume h2 {
+    display: inline;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 0.4;
+
+}
+
+/************************************************[EXPERIENCE SECTION]**************************/
+.exp-details {
+    padding: 2px 10px;
+    text-align: justify;
+}
+
+.timeline-area {
+    position: relative;
+    top: 0;
+    margin: 0 27px;
+    max-width: 1200px;
+}
+
+.timeline-area::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #EEEEEE;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.profile-name::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #537FE7;
+    border: 2px solid #E9E8E8;
+    position: relative;
+    top: 23px;
+    box-shadow: 0 2px 6px #6B728E;
+    left: -15px;
+    z-index: 1;
+}
+
+/************************************************[EDUCATION SECTION]**************************/
+
+.schools {
+
+    padding: 5px;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.educational-details {
+    padding: 2px 10px;
+    text-align: left;
+    margin-left: 20px;
+    color: #474E68;
+}
+
+.timeline-area-edu {
+    position: relative;
+    top: 0;
+    margin: 0 27px;
+    max-width: 1200px;
+}
+
+.timeline-area-edu::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #EEEEEE;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.schools::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #537FE7;
+    border: 2px solid #E9E8E8;
+    position: relative;
+    top: 10px;
+    box-shadow: 0 2px 6px #6B728E;
+    left: -16px;
+    z-index: 1;
+    position: relative;
+    left: -40px;
+}
+
+.year {
+    color: var(--paleblue);
+}
+
+
+/*********************************************[PROJECTS SECTION]******************************/
+
+.projects {
+    display: block;
+    cursor: pointer;
+}
+
+.github-icon:hover {
+    color: blue;
+
+}
+
+.project-details {
+    margin-left: 60px;
+    margin-right: 40px;
+    color: #474E68;
+}
+
+.project-details a {
+    text-decoration: none;
+    color: var(--paleblue);
+
+}
+
+.project-details a:hover {
+    color: #4B56D2;
+
+}
+
+/*********************************************[ SKILL SECTION ]**************************/
+.footer {
+    display: block;
+}
+
+.progress-bar {
+    background-color: var(--paleblue) !important;
+}
+
+
+.skill-section {
+    margin-left: 40px;
+    margin-right: 20px;
+    border-radius: 15px/15px;
+    padding: 20px 25px;
+}
+
+.skills {
+    margin-bottom: 10px;
+}
+
+/*********************************************[ FOOTER SECTION ]**************************/
+.copyright {
+    color: #474E68;
+}
