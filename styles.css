@@ -1,4 +1,4 @@
-/******************** GLOBAL STYLE ******************/
+/*************************** GLOBAL STYLE ***************************/
 
 body {
     margin: 0;
@@ -25,9 +25,7 @@ body {
     padding: 4% 6%;
 }
 
-
-/*********************** SIDEBAR (LEFT PART) ********************/
-
+/***************************** SIDEBAR (LEFT PART) **************************/
 
 .sidebar {
     background-color: var(--white);
@@ -66,7 +64,6 @@ body {
 
 section {
     line-height: 0.3;
-
 }
 
 .social-text {
@@ -101,8 +98,6 @@ section {
     color: var(--white);
     position: relative;
     top: 3px;
-
-
 }
 
 .award {
@@ -127,7 +122,10 @@ section {
     top: 4px;
     left: 11px
 }
-
+.award-div h5{
+    margin-left: 10px;
+    color: black;
+}
 .award-icon:hover {
     transform: scale(1.1);
 }
@@ -160,7 +158,6 @@ section {
     background-image: -o-linear-gradient(top, var(--paleblue), #72a5f0);
     background-image: linear-gradient(to bottom, var(--paleblue), #72a5f0);
     padding: 3% 15%;
-
 }
 
 .bttn:hover {
@@ -171,90 +168,8 @@ section {
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
-
 }
 
-@media (max-width: 1205px) and (min-width: 1004px) {
-    .basic-info {
-        text-align: center;
-    }
-
-    .social-text {
-        display: block;
-    }
-
-    .social-text p {
-        text-align: center;
-
-    }
-
-    .copyright {
-        text-align: center;
-    }
-
-    .bttn {
-        padding: 2% 12%;
-    }
-}
-
-@media (min-width: 1004px) {
-    .main-resume {
-        overflow: scroll;
-        height: 1040px;
-    }
-
-}
-
-@media (max-width: 1004px) {
-
-    .sidebar {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .main-resume {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .copyright {
-        text-align: center;
-    }
-
-    .main-resume hr {
-        width: auto;
-    }
-
-    .inst_name {
-        padding-right: 0;
-        line-height: 1.2;
-        justify-content: space-evenly;
-    }
-
-    .course_name {
-        padding-right: 0;
-        line-height: 1.2;
-        justify-content: space-evenly;
-    }
-
-    .basic-info {
-        text-align: center;
-    }
-
-    .social-text {
-        display: block;
-    }
-
-    .social-text p {
-        text-align: center;
-        font-size: 1.18rem;
-    }
-
-    .bttn {
-        padding: 1.8% 7.5%;
-    }
-
-}
 
 /********************************* MAIN RESUME (RIGHT PART) ********************/
 .about-me {
@@ -266,7 +181,6 @@ section {
     display: inline-block;
     border-radius: 30px/40px;
     padding: 30px 30px;
-
     box-shadow: 8px 0 8px #BDCDD6;
     justify-content: space-around;
 }
@@ -285,23 +199,20 @@ section {
     margin-right: 10px;
 }
 
-.experience ul {
-    list-style-type: none;
-    color: #474E68;
-}
 
 .main-resume h2 {
     display: inline;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 0.4;
-
 }
 
 /************************************************[EXPERIENCE SECTION]**************************/
 .exp-details {
     padding: 2px 10px;
+    padding-left: 40px;
     text-align: justify;
+    color: #474E68;
 }
 
 .timeline-area {
@@ -320,7 +231,9 @@ section {
     bottom: 0;
     left: 0;
 }
-
+.profile-name{
+    color: black;
+}
 .profile-name::before {
     content: '';
     display: block;
@@ -330,9 +243,9 @@ section {
     background-color: #537FE7;
     border: 2px solid #E9E8E8;
     position: relative;
-    top: 23px;
+    top: 20px;
     box-shadow: 0 2px 6px #6B728E;
-    left: -15px;
+    left: -45px;
     z-index: 1;
 }
 
@@ -380,7 +293,6 @@ section {
     position: relative;
     top: 10px;
     box-shadow: 0 2px 6px #6B728E;
-    left: -16px;
     z-index: 1;
     position: relative;
     left: -40px;
@@ -390,7 +302,9 @@ section {
     color: var(--paleblue);
 }
 
-
+.course_name{
+    color: black;
+}
 /*********************************************[PROJECTS SECTION]******************************/
 
 .projects {
@@ -444,4 +358,155 @@ section {
 /*********************************************[ FOOTER SECTION ]**************************/
 .copyright {
     color: #474E68;
+}
+
+
+/*********************************************[ MEDIA QUERIES ]**************************/
+@media (max-width: 1205px) and (min-width: 1004px) {
+    .basic-info {
+        text-align: center;
+    }
+
+    .social-text {
+        display: block;
+    }
+
+    .social-text p {
+        text-align: center;
+
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .bttn {
+        padding: 2% 12%;
+    }
+}
+
+@media (min-width: 1004px) {
+    .main-resume {
+        overflow: scroll;
+        height: 1040px;
+    }
+
+}
+
+@media (max-width: 1004px) {
+    .about-me {
+        text-align: left;
+    }
+
+    .sidebar {
+        width: 98%;
+        margin: 20px auto;
+    }
+
+    .main-resume {
+        width: 98%;
+        margin: 20px auto;
+        padding-left: 15px;
+        padding-right: 12px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+
+    .inst_name {
+        padding-right: 0;
+        line-height: 1.2;
+        justify-content: space-evenly;
+    }
+
+    .course_name {
+        padding-right: 0;
+        line-height: 1.2;
+        justify-content: space-evenly;
+    }
+
+    .basic-info {
+        text-align: center;
+    }
+
+    .social-text {
+        display: block;
+    }
+
+    .social-text p {
+        text-align: center;
+        font-size: 1.18rem;
+    }
+
+    .bttn {
+        padding: 1.8% 7.5%;
+    }
+
+    .exp-details {
+        padding: 2px 3px;
+        text-align: left;
+        padding: 25px;
+    }
+
+    .skill-section {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 15px/15px;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    .project-details {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #474E68;
+        text-align: left;
+    }
+
+    .social-icons {
+        display: inline-block;
+        border: 1px solid var(--white);
+        padding: 13px;
+        border-radius: 10%;
+        box-shadow: 0 -3px 5px #B2B2B2;
+        margin: 10px 20px;
+    }
+
+    .educational-details {
+        padding: 2px 3px;
+        text-align: left;
+        margin-left: 10px;
+        color: #474E68;
+    }
+    .schools::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #537FE7;
+        border: 2px solid #E9E8E8;
+        position: relative;
+        top: 18px;
+        box-shadow: 0 2px 6px #6B728E;
+        z-index: 1;
+        position: relative;
+        left: -23.5px;
+    }
+    .profile-name::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #537FE7;
+        border: 2px solid #E9E8E8;
+        position: relative;
+        top: 20px;
+        box-shadow: 0 2px 6px #6B728E;
+        left: -30px;
+        z-index: 1;
+    }
 }
