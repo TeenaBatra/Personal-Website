@@ -11,7 +11,10 @@ body {
     cursor: default;
     font-size: 1.15rem;
     text-align: justify;
+}
 
+.container-fluid {
+    padding: 4% 6%;
 }
 
 :root {
@@ -21,12 +24,6 @@ body {
     --lightblue: #D5DEF8
 }
 
-.container-fluid {
-    padding: 4% 6%;
-}
-.link{
-    color: black;
-}
 /***************************** SIDEBAR (LEFT PART) **************************/
 
 .sidebar {
@@ -45,7 +42,7 @@ body {
 }
 
 .hr-under-name {
-    border-top: 2px solid var(--lightblue);
+    border-top: 2px solid #6B728E;
     position: relative;
     bottom: 10px;
 }
@@ -57,7 +54,6 @@ body {
     border-radius: 10%;
     box-shadow: 0 -3px 5px #B2B2B2;
     margin: 10px 20px;
-
 }
 
 .social-icons:hover {
@@ -162,11 +158,11 @@ section {
     border-style: none;
     margin: 20px 20px;
     cursor: pointer;
-    background-image: -webkit-linear-gradient(top, var(--paleblue), #72a5f0);
-    background-image: -moz-linear-gradient(top, var(--paleblue), #72a5f0);
-    background-image: -ms-linear-gradient(top, var(--paleblue), #72a5f0);
-    background-image: -o-linear-gradient(top, var(--paleblue), #72a5f0);
-    background-image: linear-gradient(to bottom, var(--paleblue), #72a5f0);
+    background-image: -webkit-linear-gradient(top, var(--paleblue), #2F58CD);
+    background-image: -moz-linear-gradient(top, var(--paleblue), #2F58CD);
+    background-image: -ms-linear-gradient(top, var(--paleblue), #2F58CD);
+    background-image: -o-linear-gradient(top, var(--paleblue), #2F58CD);
+    background-image: linear-gradient(to bottom, var(--paleblue), #2F58CD);
     padding: 3% 15%;
 }
 
@@ -182,6 +178,7 @@ section {
 
 
 /********************************* MAIN RESUME (RIGHT PART) ********************/
+
 .about-me {
     color: #474E68;
 }
@@ -209,12 +206,15 @@ section {
     margin-right: 10px;
 }
 
-
 .main-resume h2 {
     display: inline;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 0.4;
+}
+#about-me-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
 
 /************************************************[EXPERIENCE SECTION]**************************/
@@ -241,9 +241,11 @@ section {
     bottom: 0;
     left: 0;
 }
+
 .profile-name{
     color: black;
 }
+
 .profile-name::before {
     content: '';
     display: block;
@@ -324,7 +326,6 @@ section {
 
 .github-icon:hover {
     color: blue;
-
 }
 
 .project-details {
@@ -345,7 +346,7 @@ section {
 }
 
 /*********************************************[ SKILL SECTION ]**************************/
-.footer {
+.skills-class {
     display: block;
 }
 
@@ -418,7 +419,7 @@ section {
         width: 98%;
         margin: 20px auto;
         padding-left: 15px;
-        padding-right: 12px;
+        padding-right: 8px;
         box-shadow: -6px 0 5px #BDCDD6, 6px 0 5px #BDCDD6;
     }
 
@@ -457,7 +458,6 @@ section {
     }
 
     .exp-details {
-        padding: 2px 3px;
         text-align: left;
         padding: 25px;
         padding-right: 0;
